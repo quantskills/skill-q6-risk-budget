@@ -1,0 +1,4 @@
+interface:
+  display_name: "CTA Portfolio Risk Budget"
+  short_description: "Compare equal weight, volatility targeting, and ERC on a frozen CTA signal"
+  default_prompt: "Use $risk-budget to compare equal weight, volatility targeting, and ERC allocations on the frozen CTA return matrix."

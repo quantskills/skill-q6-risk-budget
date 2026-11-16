@@ -1,0 +1,22 @@
+---
+description: Use the CTA Portfolio Risk Budget skill to compare equal weight, volatility targeting, and ERC on a frozen CTA signal.
+alwaysApply: false
+---
+
+# CTA Portfolio Risk Budget Skill
+
+When the user asks whether risk budgeting improves after-cost CTA performance, wants to audit leverage and margin usage, compare ERC with equal weight, or reproduce the Q6 study, use the local skill package.
+
+Preferred local project path:
+
+```text
+.cursor/skills/risk-budget
+```
+
+Workflow:
+
+1. Read `.cursor/skills/risk-budget/SKILL.md`.
+2. For input schemas and baseline files, read `.cursor/skills/risk-budget/references/api_guide.md`.
+3. Run `python scripts/build.py --write-production` before reading production results.
+4. Preserve schemes, vol target, leverage/margin caps, covariance window, costs, and data dates.
+5. Do not invent data fields, weights, returns, or allocation advice.

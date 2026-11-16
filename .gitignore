@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.env
+*.env
+*.parquet
+!生产产物/数据库.parquet
+!tests/fixtures/*.parquet
+!references/baseline/*.parquet

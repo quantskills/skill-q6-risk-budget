@@ -1,0 +1,39 @@
+{
+  "name": "risk-budget",
+  "version": "1.0.0",
+  "description": "CTA portfolio risk-budget BUILD comparing equal weight, volatility targeting, and ERC",
+  "author": "fuzijun",
+  "created_date": "2026-11-16",
+  "tags": ["quant", "build", "futures", "cta", "risk-budget"],
+  "category": "build-research",
+  "spec": {
+    "build_id": "Q6",
+    "build_name": "risk-budget",
+    "build_type": "result-type",
+    "data_source": "PandaData"
+  },
+  "dependencies": {
+    "python": ">=3.10",
+    "pandas": ">=1.3.0",
+    "numpy": ">=1.20.0",
+    "scipy": ">=1.7.0",
+    "pyarrow": ">=10.0.0"
+  },
+  "scripts": {
+    "build": "scripts/build.py",
+    "test": "scripts/test.py"
+  },
+  "config": {
+    "schemes": ["equal", "vol", "erc"],
+    "cost_bps": 1.5,
+    "target_vol": 0.10,
+    "max_leverage": 1.5,
+    "max_margin": 0.60,
+    "lookback": 60
+  },
+  "production": {
+    "output_format": "parquet",
+    "update_frequency": "on-demand",
+    "retention_period": "1_year"
+  }
+}
